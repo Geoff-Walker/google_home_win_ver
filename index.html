@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+       <title>Google</title>
+<style>
+    body{
+        height: 100vh;
+        margin: 0;
+        font-family: Arial,Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+    
+    header {
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+        padding: 6px;
+        position: fixed;
+    }
+    .google-dots {
+        border-radius: 5px;
+        height: 20px;
+        width: 20px;
+        }
+    nav{width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav div{
+        display: flex;
+        width: 50%;
+        padding: 5px;
+        align-items: center;
+    }
+
+    nav div:nth-child(1)  {
+        justify-content: flex-start;
+    }
+
+    nav div:nth-child(2) {
+        justify-content: flex-end;
+        text-align: right;
+        right: 0;
+    }
+
+    nav div a {
+        padding: 8px;
+        white-space:nowrap;
+        text-decoration: none;
+        color: #3b3b3b;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .sign-in{
+        font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 16px;
+        margin-left: 10px;
+        margin-right: 8px;
+        min-width: 96px;
+        padding: 9px 23px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background: #1a73e8;
+        border: 1px solid transparent;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding-top: 260px;
+    }
+
+    main img {
+        display: block;
+        margin: 0 auto;
+        }
+
+    #search {
+        width: 50vw;
+        max-width: 500px;
+        height: 40px;
+        border: 1px solid #e1e1e1;
+        border-radius: 50px;
+        padding: 0 40px;
+        font-size: initial;
+        margin: 20px;
+    }
+
+        #search:hover, #search:active, #search:focus {
+            box-shadow: 0px 1.7px 5px #dfdfdf;
+            ;
+            outline: none;
+        }
+
+    .search_bar {
+        position: absolute;
+        padding: 11px 11px;
+        filter: contrast(0);
+        background-position: -248px -35px;
+        margin: 30px 30px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .buttons div {
+            margin:5px;
+            padding: 10px;
+            color: #3b3b3b;
+            background-color: #eee;
+            border-color: #c0c0c0;
+            cursor: pointer;
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+
+    .buttons div:hover {
+                border: 1px solid #c0c0c0;
+            }
+
+    footer {
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 6px;
+        position: fixed;
+        flex-wrap: wrap;
+    }
+        
+        
+    footer div:nth-child(1) {
+            justify-content: start;
+        }
+
+    footer div:nth-child(2) {
+            justify-content: center;
+        }
+
+    footer div:nth-child(3) {
+            justify-content: flex-end;
+            text-align: right
+        }
+
+
+
+    .uk {
+        padding: 15px 20px;
+        font-size: 15px;
+        color: rgba(0,0,0,.54);
+        position: relative;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="head-left">
+                <a src="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a src="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
+            </div>
+
+            <div id="head-right">
+                <a src="https://www.gmail.com">Gmail</a>
+                <a src="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a>
+                <a src="https://about.google/intl/en/products/"><img src="https://th.bing.com/th/id/OIP.D9yA57Nvhtso90wKNLY1owAAAA?w=195&h=180&c=7&o=5&pid=1.7" class="google-dots"></a>
+                <a src="https://accounts.google.com/"><input type="button" value="Sign in" class="sign-in" /></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <img src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        <form>
+            <div class="search-bar"></div>
+            <input id="search" type="search" nam="search" />
+            <div class="buttons">
+                <a><div id="gsearch">Google Search</div></a>
+                <a><div id="lucky">Im Feeling Lucky</div></a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+       
+            <div class="uk">United Kingdom</div>
+
+            <nav>
+                <div id="left-footer">
+                    <a src="https://ads.google.com/intl/en_uk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                    <a src="https://smallbusiness.withgoogle.com/intl/en_uk/?subid=uk-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=uk-en_GB-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a>
+                    <a src="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+                </div>
+
+                <div id="middle-footer">
+                    <a src="https://sustainability.google/commitments-europe/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwACyrS4Vj3dqDP4B98m-HMqar4lWmDamcLw&usqp=CAU" height=15px width=15px>Carbon neutral since 2007</a>
+                </div>
+
+                <div id="right-footer">
+                    <a src="https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi6jtHEu93xAhUPi1wKHfJUCroQ8awCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-GB%26fg%3D1&usg=AOvVaw1f3o-3igFwFurhnmwIvE03">Privacy</a>
+                    <a src="https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi6jtHEu93xAhUPi1wKHfJUCroQ8qwCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-GB%26fg%3D1&usg=AOvVaw2VR1WPZAwebyYaHLUXFtD2">Terms</a>
+                    <p>Settings</p>
+
+                </div>
+            </nav>
+           
+    </footer>
+   
+
+</body>
+</html>
